@@ -5,26 +5,26 @@
 */
 
 # generate 16-bit code
-.code16 			   
+.code16
 # executable code location
-.text 				   
+.text
 
 .globl _start
 
 # entry point
-_start:				    
+_start:
 
     # character to print
-    movb $'x' , %al		
+    movb $'x' , %al
     # bios service code to print
-    movb $0x0e, %ah	
+    movb $0x0e, %ah
     # bios service (interrupt) 
-    int  $0x10		  
+    int  $0x10
     
     # mov to 510th byte from 0 pos
-    . = _start + 510	    
+    . = _start + 510
     
     # MBR boot signature 
-    .byte 0x55		        
+    .byte 0x55
     # MBR boot signature 
-    .byte 0xaa		        
+    .byte 0xaa

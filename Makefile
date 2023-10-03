@@ -1,7 +1,7 @@
 # Author: Éder Augusto Penharbel
 
 .PHONY: clean image
-SOURCE = escrevex
+SOURCE = tarefa-3-ex-3
 
 all: image
 
@@ -25,5 +25,5 @@ image: $(SOURCE).bin floppy.img
 # deletar arquivos 
 clean:
 	$(RM) -f floppy.img
-	$(RM) -f $(SOURCE).o
-	$(RM) -f $(SOURCE).bin
+	$(RM) -f *.o
+	$(RM) -f *.bin

@@ -5,4 +5,4 @@ clock: sync=realtime, rtc_sync=1, time0=local
 floppya: 1_44=floppy.img, status=inserted
 boot: a
 log: bochsout.txt
-mouse: enabled=0
+mouse: enabled=0 
