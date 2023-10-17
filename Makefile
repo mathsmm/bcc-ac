@@ -1,7 +1,7 @@
 # Author: Éder Augusto Penharbel
 
 .PHONY: clean image
-SOURCE = tarefa-3-ex-3
+SOURCE = tarefa-3-ex-4
 
 all: image
 
